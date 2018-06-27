@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainContainer" minHeight="680" minWidth="1000" stylesheets="/css/app.css" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solarchargerdatamonitor.MainController">
+    <MenuBar fx:id="menuBar" minHeight="30" prefHeight="30" maxHeight="30">
+        <menus>
+            <Menu fx:id="mainMenu" text="Statistics">
+                <MenuItem fx:id="viewStatisticsMenuItem" onAction="#handleViewStatisticsMenuItemClicked" text="View" />
+                <MenuItem fx:id="exportMenuItem" onAction="#handleExportMenuItemClicked" text="Export" />
+                <SeparatorMenuItem />
+                <MenuItem fx:id="exitMenuItem" onAction="#handleExitMenuItemClicked" text="Exit" />
+            </Menu>
+            <Menu fx:id="helpMenu" text="Help">
+                <MenuItem fx:id="viewStatusIndicatorLegendsMenuItem" onAction="#handleViewStatusIndicatorLegendsMenuItemClicked" text="Status Indicator Info" />
+            </Menu>
+        </menus>
+    </MenuBar>
+
+    <TableView fx:id="devicesTable"  prefHeight="650" minHeight="650" maxHeight="650" >
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+        <columns>
+            <TableColumn fx:id="deviceName" editable="false" text="Device" />
+            <TableColumn fx:id="register4115" editable="false" text="Battery Voltage&#013;(V)" />
+            <TableColumn fx:id="register4117" editable="false" text="Battery Current&#013;(A)" />
+            <TableColumn fx:id="register4116" editable="false" text="PV Voltage&#013;(V)" />
+            <TableColumn fx:id="register4119" editable="false" text="PV Power&#013;(W)" />
+            <TableColumn fx:id="register4121" editable="false" text="PV Current&#013;(A)" />
+            <TableColumn fx:id="register4120" editable="false" text="State of Charge" />
+            <TableColumn fx:id="register4133" editable="false" text="FET PCB Temp&#013;(&#x00b0;C)" />
+            <TableColumn fx:id="register4134" editable="false" text="Main PCB Temp&#013;(&#x00b0;C)" />
+            <TableColumn fx:id="deviceStatus" editable="false" text="Status" />
+        </columns>
+        <placeholder>
+            <Label fx:id="placeholderLabel" text="No Device information to show." textAlignment="CENTER" wrapText="true" />
+        </placeholder>
+    </TableView>
+</VBox>
