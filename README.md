@@ -8,7 +8,7 @@ This application consists of two main parts.
 To run and test Monitor Application.
 1. Import MySQL database with dummy data in DB folder.
 2. Update database configuration settings in jdbc.properties file.
-2. Open this application in IntelliJ Idea and use "Run" functionality. Or directly run /out/artifacts/SolarChargerDataMonitor/SolarChargerDataMonitor.jar using java command in your console.
+2. Open this application in IntelliJ Idea and use "Run" functionality.
 
 Here is full technology stack of complete application:
 * JavaSE
@@ -23,3 +23,8 @@ Please contact me via any of below given options to get complete source code of 
 * LinkedIn (https://www.linkedin.com/in/zeeshanelahi/)
 * Upwork (https://www.upwork.com/fl/zeeshanelahi83)
 * Stack Overflow (https://stackoverflow.com/users/2492524/zeeshan-elahi)
+
+**Implementation Details:**
+MainController.java - It is main controller file of this application and include complete functionality of device grid screen.
+ExportController.java - This file contains functionality related to CSV export.
+As per my understanding application code is very much self explanatory. But, if you still have any confusion. Please add your comment with any further query. 
