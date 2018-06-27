@@ -25,6 +25,9 @@ Please contact me via any of below given options to get complete source code of 
 * Stack Overflow (https://stackoverflow.com/users/2492524/zeeshan-elahi)
 
 **Implementation Details:**
+
 MainController.java - It is main controller file of this application and include complete functionality of device grid screen.
+
 ExportController.java - This file contains functionality related to CSV export.
-As per my understanding application code is very much self explanatory. But, if you still have any confusion. Please add your comment with any further query. 
+
+As per my understanding application code is very much self explanatory. But, if you still have any confusion. Please add your comment with any further query.
