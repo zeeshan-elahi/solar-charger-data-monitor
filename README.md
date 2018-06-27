@@ -8,7 +8,7 @@ This application consists of two main parts.
 To run and test Monitor Application.
 1. Import MySQL database with dummy data in DB folder.
 2. Update database configuration settings in jdbc.properties file.
-2. Open this application in IntelliJ Idea and use "Run" functionality. Or directly run /out/artifacts/SolarChargerDataMonitor/SolarChargerDataMonitor.jar using java command in your console.
+2. Open this application in IntelliJ Idea and use "Run" functionality.
 
 Here is full technology stack of complete application:
 * JavaSE
