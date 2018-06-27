@@ -13,7 +13,7 @@ To run and test Monitor Application.
 Here is full technology stack of complete application:
 * JavaSE
 * JavaFX
-* Modbus TCP/IP protocol implementation
+* Modbus TCP/IP protocol implementation by using EasyModbus client (http://easymodbustcp.net/en/)
 * MySQL
 * File IO
 
